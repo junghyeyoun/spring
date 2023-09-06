@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 // @Service("senderProcess") // 가독성을 위해 : Sender와 SenderProcess 역할이 다름
 @Service
 public class SenderProcess {
-	// @0Autowired // type에 의한 매핑 : 클래스의 포함 관계
+	// @Autowired // type에 의한 매핑 : 클래스의 포함 관계
 	// private Sender sender;
 	
 	@Autowired

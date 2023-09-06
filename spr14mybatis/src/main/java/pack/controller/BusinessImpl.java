@@ -1,0 +1,24 @@
+package pack.controller;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import pack.model.SangpumDto;
+import pack.model.SangpumInter;
+
+@Service
+public class BusinessImpl implements BusinessInter {
+	
+	@Autowired // 클래스의 포함관계 성립
+	private SangpumInter sangpumInter;
+	
+	public void dataShow() {
+		ArrayList<SangpumDto> list = (ArrayList<SangpumDto>)sangpumInter.selectList();
+		
+		for(SangpumDto s: list) {
+			System.out.println(s.getCode()+" "+s.getSang()+" "+s.getSu()+" "+s.getDan());
+		}
+	}
+}
