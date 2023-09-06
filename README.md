@@ -14,8 +14,6 @@
  
 # 📌 DI (Dependency Injection)
 
-소스 코드 : https://github.com/junghyeyoun/spring
-
  스프링에서의 핵심 기능은 의존성 주입과 관점 지향 프로그래밍이다. 요번 포스팅에서는 의존성 주입에 대해 알아 보겠다.
  
  **의존성 주입이란?**  약어로 DI (Dependency Injection) 라고도 부르며, 의존하는 부분을 외부에서 주입한다라는 뜻이다. 
@@ -28,14 +26,14 @@
 4. 스프링 프레임워크에서 인스턴스를 생성한다.
 5. 인스턴스를 이용하고 싶은 곳에 어노테이션을 부여한다.
 
-  참고 : https://velog.io/write?id=636cdf33-00b2-4e14-9736-4c7695cf4b7a
+  자세한 내용 ✏ https://velog.io/write?id=636cdf33-00b2-4e14-9736-4c7695cf4b7a
 
 # 📌 Annotation
 **Annotation이란?** 어노테이션의 사전적 의미는 주석이란 뜻으로, 자바에서의 Annotation은 코드 사이에 주석처럼 쓰이며 특별한 의미, 기능을 수행하도록 하는 기술이다.
 @xxx 형태로 작성하며 외부 소프트웨어에 필요한 처리 내용을 전달한다.
 DI는 xml에 의존적이다. 하지만, Annotation을 쓴다면 xml의 역할아 축소된다. 그렇기 때문에 생성 및 제거가 편리하다고 할 수 있다. Annotation 보다 init.xml이 우선순위가 먼저이다.
 
-  참고 : https://velog.io/@tnsida315/Spring-Annotation
+  자세한 내용 ✏ https://velog.io/@tnsida315/Spring-Annotation
 
 # 📌 AOP란?
 AOP란? Aspect Oriented Programing(관계 지향 프로그래밍)의 약어이다. AOP는 다음 두가지 요소로 구성된다고 할 수 있다.
@@ -43,5 +41,5 @@ AOP란? Aspect Oriented Programing(관계 지향 프로그래밍)의 약어이�
 2. 횡단적 관심사 : 실현하는 프로그램과 별도로 부수적으로 필요한 프로그램
 간단하게 설명하자면, 공통 처리 등의 '횡단적 관심사' 를 추출하고 프로그램의 여러 곳에서 호출할 수 있게 설정함으로써 개발자는 실현해야 할 기능인 '중심적 관심사' 에만 집중해서 작성하면 되는 구조이다.
 
-  참고 : https://velog.io/@tnsida315/Spring-AOP
+  자세한 내용 ✏ https://velog.io/@tnsida315/Spring-AOP
 
