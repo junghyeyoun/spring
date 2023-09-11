@@ -53,5 +53,18 @@ public class NiceController {
 		model.addAttribute("sanglist",list);
 		return "show3";
 	}
+	
+	@GetMapping("/ex4")
+	public String abc4(Model model,String param1, String param2) {
+		System.out.println(param1+" "+param2);
 		
+		model.addAttribute("arg1",param1);
+		model.addAttribute("arg2",param2);
+		return "show4";
+	}
+	
+	@GetMapping("/ex5")
+	public String abc5() {
+		return "show5";
+	}
 }

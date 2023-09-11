@@ -38,5 +38,8 @@ switch test <br>
 <a href="/thleaf/ex1">show1로 이동 (기본 방식)</a><br>
 <a th:href="@{/thleaf/ex1}">show1로 이동 (thymeleaf 방식)</a><br>
 <a th:href="@{http://www.daum.net}">daum 페이지로 이동 (thymeleaf 방식)</a><br>
+
+<a href="/thleaf/ex4?param1=안녕&param2=반가워">show4로 이동 (기본)</a><br>
+<a th:href="@{/thleaf/ex4(param1='안녕2',param2='반가워2')}">show4로 이동(타임리프)</a><br/>
 </body>
 </html>
