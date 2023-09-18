@@ -7,5 +7,5 @@ import lombok.Data;
 @Data
 public class UploadDto {
 	private String myName;
-	private MultipartFile myfile;
+	private MultipartFile myFile;
 }

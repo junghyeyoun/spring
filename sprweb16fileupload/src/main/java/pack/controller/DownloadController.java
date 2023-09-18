@@ -16,13 +16,14 @@ public class DownloadController {
 	@ResponseBody
 	public byte[] downProcess(HttpServletResponse response, @RequestParam String filename) throws Exception{
 		System.out.println("filename : " + filename);
-		File newFile = new File("C:/work/sprsou/sprweb16fileupload/src/main/resources/static/upload/" + filename);
+	    File newFile = new File("C:\\work\\sprsou\\spring\\sprweb16fileupload\\src\\main\\resources\\static\\upload\\" + filename); // 절대경로로 찍기
 		
 		byte[] bytes = FileCopyUtils.copyToByteArray(newFile);
-		String fn = new String(newFile.getName().getBytes(),"iso_8859_1");
+		String fn = new String(newFile.getName().getBytes(), "iso_8859_1");
 		
-		response.setHeader("Content-Disposition", "attachment;filename=\"" +fn + "\""); // \이용해서 큰따옴표 추가해주기
+		response.setHeader("Content-Disposition", "attachment;filename=\"" + fn + "\"");
 		response.setContentLength(bytes.length);
+		
 		return bytes;
-	}
+		}
 }
