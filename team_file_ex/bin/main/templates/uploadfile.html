@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<img>
+파일명 : [[${filename}]]
+<br>
+[[${imageUrl}]]
+<br>
+ <img th:src="@{upload/}+${filename}" alt="업로드된 이미지">
+</body>
+</html>
